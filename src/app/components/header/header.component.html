@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <div *ngIf="isAuth">
+    <a class="btn btn-dark float-start text-uppercasse mt-2" routerLink="/book/new">Nouveaux libre</a>
+    <button  class="btn btn-dark float-end text-uppercasse mt-2" (click)="onClickSignOut()">Deconnexion</button>
+    <a class="btn btn-dark float-end text-uppercase mt-2 m-2" [routerLink]="profilUrl">Profil</a>
+  </div>
+  <h1>Books Manager !</h1>
+</div>
+
+<hr>
